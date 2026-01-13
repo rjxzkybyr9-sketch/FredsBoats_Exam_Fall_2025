@@ -6,28 +6,7 @@ namespace FredsBoats.Web.Models
     [Table("customer")]
     public class Customer
     {
-        [Key]
-        [Column("customerid")]
-        public int CustomerId { get; set; }
-
-        [Column("surname")]
-        [StringLength(70)]
-        public string Surname { get; set; } = string.Empty;
-
-        [Column("name")]
-        [StringLength(50)]
-        public string Name { get; set; } = string.Empty;
-
-        [Column("address")]
-        [StringLength(250)]
-        public string? Address { get; set; }
-
-        [Column("telephone")]
-        [StringLength(20)]
-        public string? Telephone { get; set; }
-
-        [Column("licence")]
-        public bool Licence { get; set; } // TINYINT(1) usually maps to bool in C#
+        // ACSC384 - To Do - Customer Class
 
         // Navigation
         public ICollection<CustReservation> CustReservations { get; set; } = new List<CustReservation>();
