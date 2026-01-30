@@ -35,5 +35,6 @@ namespace FredsBoats.Web.Models
 
         // Navigation for Reservations
         public ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
+        public ICollection<Comment> Comments {get;set;} = new List<Comment>();
     }
 }
